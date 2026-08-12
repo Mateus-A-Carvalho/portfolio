@@ -31,6 +31,10 @@ const blurBGC = () => {
         heading.classList.toggle(`blur`, heading.dataset.name !== hoveredHeadingDataName);
       })
 
+      projectsDescriptorWrapper.forEach(descriptor => {
+        // You must to add a ID or an attribute to link this element with PROJECTS
+      });
+
       hoveredProject.classList.add(`focused`);
     })
 
@@ -41,7 +45,9 @@ const blurBGC = () => {
       projectsHeadings.forEach(heading => {heading.classList.remove(`blur`);})
       hoveredProject.classList.remove(`focused`);
       });
-    });
+    })
+  
+    
   });
 
 }
